@@ -115,7 +115,7 @@ function ripgrepPath()
 function tags()
 {
     var tags = vscode.workspace.getConfiguration( 'todo-tree.general' ).tags;
-    return tags.length > 0 ? tags : [ "TODO" ];
+    return tags.length > 0 ? tags : [ "TODO", "todo" ];
 }
 
 function shouldSortTagsOnlyViewAlphabetically()
